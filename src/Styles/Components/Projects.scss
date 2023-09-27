@@ -19,12 +19,14 @@
   grid-template-columns: repeat(auto-fit, minmax(var(--v-Percent), 1fr));
   grid-template-rows:auto;
   padding:20px;
+  justify-content: center;
+  align-items: center;
   grid-gap:10px;
   width: 70vw;
   height: auto;
 }
 
-@media (max-width: 563px) {
+@media (max-width: 380px) {
   :root{
     --v-Percent:100%;
   }
@@ -47,6 +49,7 @@
 .Embedded,
 .Desktop,
 .Front{
+  border: 1px solid #fff;
   .Birthdate {
     font-size: 0.9em;
     padding: 5px;
@@ -117,6 +120,7 @@
 .Front 
 {
   height: 18em;
+  width: 80vw;
 }
 
 }
