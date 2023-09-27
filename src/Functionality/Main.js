@@ -27,73 +27,65 @@ ThemeBtn.addEventListener("click", () => {
 // Crear un JSON con la información de cada elemento
 const data = [
   {
-    bgImage: "/public/Image/south-park.jpeg",
+    bgImage: "/Image/south-park.jpeg",
     birthdate: "August 12 2022",
     name: "Jesus Velez",
     title: "South Park REST API",
     description:
       "Simple REST API for South Park Cartoon that return in JSON format Characters from the Cartoon",
-    tools: [
-      "./public/Icons/express.svg",
-      "./public/Icons/nodejs.svg",
-      "./public/Icons/css.svg",
-    ],
+    tools: ["./Icons/express.svg", "./Icons/nodejs.svg", "./Icons/css.svg"],
     links: [{ icon: "bi-box-arrow-up-right", href: "" }],
   },
   {
-    bgImage: "/public/Image/Camera_bus.jpg",
+    bgImage: "/Image/Camera_bus.jpg",
     birthdate: "November 3 2022",
     name: "Jesus Velez",
     title: "AI - CV System for Pubic Transport",
     description:
       "AI system that recognizes people who have a criminal history of vehicular assault",
-    tools: [
-      "./public/Icons/python.svg",
-      "./public/Icons/cpp.svg",
-      "./public/Icons/espressif.svg",
-    ],
+    tools: ["./Icons/python.svg", "./Icons/cpp.svg", "./Icons/espressif.svg"],
     links: [{ icon: "bi-box-arrow-up-right", href: "" }],
   },
   {
-    bgImage: "/public/Image/Bike-safety.jpg",
+    bgImage: "/Image/Bike-safety.jpg",
     birthdate: "December 15, 2022",
     name: "Jesus Velez",
     title: "Safety System for Cycling",
     description:
       "security system that Using a gyroscope, it checks if there has been an accident and makes a call using Bluetooth.",
-    tools: ["./public/Icons/c.svg"],
+    tools: ["./Icons/c.svg"],
     links: [{ icon: "bi-box-arrow-up-right", href: "" }],
   },
   {
-    bgImage: "/public/Image/USB.webp",
+    bgImage: "/Image/USB.webp",
     birthdate: "June 13, 2023",
     name: "Jesus Velez",
     title: "Pic USB Keyboard",
     description:
       "alternative to the stream deck with custom features to control lights and audio",
-    tools: ["./public/Icons/cpp.svg", "./public/Icons/cSharp.svg"],
+    tools: ["./Icons/cpp.svg", "./Icons/cSharp.svg"],
     links: [{ icon: "bi-box-arrow-up-right", href: "" }],
   },
 
   {
-    bgImage: "/public/Image/Encripter.png",
+    bgImage: "/Image/Encripter.png",
     birthdate: "February 10, 2020",
     name: "Jesus Velez",
     title: "Password File Encrypter",
     description:
       "by CLI encrypts and desencrypts a file that contains password, by using a Key",
-    tools: ["./public/Icons/cpp.svg"],
+    tools: ["./Icons/cpp.svg"],
     links: [{ icon: "bi-box-arrow-up-right", href: "" }],
   },
 
   {
-    bgImage: "/public/Image/Stringify.webp",
+    bgImage: "/Image/Stringify.webp",
     birthdate: "April 12, 2023",
     name: "Jesus Velez",
     title: "Stringify Library",
     description:
       "New Custom Library to Manage String in C, with the feature that JS offers",
-    tools: ["./public/Icons/cpp.svg"],
+    tools: ["./Icons/cpp.svg"],
     links: [{ icon: "bi-box-arrow-up-right", href: "" }],
   },
 ];
