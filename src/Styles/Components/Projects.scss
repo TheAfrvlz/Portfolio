@@ -1,0 +1,131 @@
+.Projects {
+  padding-top: 80px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1em;
+
+  h1 {
+    font-size: 3.1em;
+    font-family: var(--ff-Sarala);
+    color: #17c47f;
+  }
+}
+
+.ProjectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--v-Percent), 1fr));
+  grid-template-rows:auto;
+  padding:20px;
+  grid-gap:10px;
+  width: 70vw;
+  height: auto;
+}
+
+@media (max-width: 563px) {
+  :root{
+    --v-Percent:100%;
+  }
+}
+
+@media (min-width: 917px) {
+  :root{
+    --v-Percent:40%;
+  }
+}
+
+@media (min-width: 1517px) {
+  :root{
+    --v-Percent:30%;
+  }
+}
+
+
+
+.Embedded,
+.Desktop,
+.Front{
+  .Birthdate {
+    font-size: 0.9em;
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: #2e2e2e;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  & .Info {
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 23px;
+    margin-bottom: -5.4em;
+    background-color: #36343491;
+    height: 50%;
+    width: 100%;
+    color: #fdfdfd;
+    .Tools,
+    .Links {
+      width: 100%;
+      display: flex;
+      gap: 12px;
+      img {
+        height: 20px;
+        width: auto;
+      }
+    }
+  }
+}
+
+.Embedded,
+.Desktop,
+.Front {
+  border-radius: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(253, 253, 253, 0.17)
+    ),
+    var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto;
+  &:hover {
+    transition: 0.5s ease-in-out;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(253, 253, 253, 0)),
+      var(--bg-image);
+  }
+  
+}
+
+:is(.Front, .Embedded, .Desktop):hover .Info {
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 679px) {
+.Embedded,
+.Desktop,
+.Front 
+{
+  height: 18em;
+}
+
+}
+
+@media (min-width: 679px) {
+  .Embedded,
+.Desktop,
+.Front 
+{
+  height: 18em;
+}
+}

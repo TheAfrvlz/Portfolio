@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Allan&family=IM+Fell+Great+Primer+SC&family=Imperial+Script&family=Imprima&display=swap");
+.Presentation {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Nom {
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  h1 {
+    font-size: 8em;
+  }
+  margin-left: calc(-1 * 2em);
+}
+.Nom:nth-child(1) {
+  margin-left: 2em;
+}
+.Nom:nth-child(2) {
+  margin-top: calc(-1 * 3em);
+}
+
+.Nom:nth-child(1) h1:nth-child(1) {
+}
+.Nom:nth-child(1) h1:nth-child(2) {
+  margin-top: calc(-1 * 0.1em);
+  margin-left: calc(-1 * 0);
+}
+.Nom:nth-child(1) h1:nth-child(3) {
+  margin-top: calc(-1 * 0.2em);
+  margin-left: 0;
+}
+.Nom:nth-child(1) h1:nth-child(4) {
+  margin-top: calc(-1 * 0.3em);
+  margin-left: 0;
+}
+.Nom:nth-child(1) h1:nth-child(5) {
+  margin-top: calc(-1 * 0.4em);
+  margin-left: 0;
+}
+
+.Nom:nth-child(2) h1:nth-child(1) {
+  margin-top: 0;
+  margin-left: 0;
+}
+.Nom:nth-child(2) h1:nth-child(2) {
+  margin-top: calc(-1 * 0.1em);
+}
+.Nom:nth-child(2) h1:nth-child(3) {
+  margin-top: calc(-1 * 0.2em);
+}
+.Nom:nth-child(2) h1:nth-child(4) {
+  margin-top: calc(-1 * 0.3em);
+}
+.Nom:nth-child(2) h1:nth-child(5) {
+  margin-top: calc(-1 * 0.4em);
+}
+.glitch {
+  font-family: "Allan", cursive;
+  color: #fffffff6;
+  position: relative;
+  margin: 0;
+}
+.glitch::after,
+.glitch::before {
+  content: attr(data-text);
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.glitch::after {
+  text-shadow: -2px 2px #cc0f39;
+  left: -2px;
+  animation: anim1 1s infinite linear alternate-reverse;
+}
+.glitch::before {
+  text-shadow: 2px -2px #0ffbf9;
+  left: 2px;
+  animation: anim2 1s infinite linear alternate-reverse;
+}
+
+@media (max-width: 991.98px) {
+  .glitch {
+    font-size: 75px;
+  }
+}
+@media (min-width: 992px) {
+  .glitch {
+    font-size: 150px;
+  }
+}
+
+@keyframes anim1 {
+  0%,
+  9% {
+    clip-path: inset(14% 0% 23% 0%);
+  }
+  10%,
+  19% {
+    clip-path: inset(11% 0% 2% 0%);
+  }
+  20%,
+  29% {
+    clip-path: inset(43% 0% 53% 0%);
+  }
+  30%,
+  39% {
+    clip-path: inset(21% 0% 33% 0%);
+  }
+  40%,
+  49% {
+    clip-path: inset(24% 0% 3% 0%);
+  }
+  50%,
+  59% {
+    clip-path: inset(12% 0% 13% 0%);
+  }
+  60%,
+  69% {
+    clip-path: inset(13% 0% 11% 0%);
+  }
+  70%,
+  79% {
+    clip-path: inset(44% 0% 23% 0%);
+  }
+  80%,
+  89% {
+    clip-path: inset(14% 0% 93% 0%);
+  }
+  90%,
+  99% {
+    clip-path: inset(22% 0% 13% 0%);
+  }
+  100% {
+    clip-path: inset(33% 0% 23% 0%);
+  }
+}
+
+@keyframes anim2 {
+  0%,
+  9% {
+    clip-path: inset(23% 0% 25% 0%);
+  }
+  10%,
+  19% {
+    clip-path: inset(21% 0% 53% 0%);
+  }
+  20%,
+  29% {
+    clip-path: inset(55% 0% 53% 0%);
+  }
+  30%,
+  39% {
+    clip-path: inset(62% 0% 21% 0%);
+  }
+  40%,
+  49% {
+    clip-path: inset(31% 0% 32% 0%);
+  }
+  50%,
+  59% {
+    clip-path: inset(32% 0% 73% 0%);
+  }
+  60%,
+  69% {
+    clip-path: inset(64% 0% 22% 0%);
+  }
+  70%,
+  79% {
+    clip-path: inset(31% 0% 6% 0%);
+  }
+  80%,
+  89% {
+    clip-path: inset(64% 0% 52% 0%);
+  }
+  90%,
+  99% {
+    clip-path: inset(48% 0% 41% 0%);
+  }
+  100% {
+    clip-path: inset(92% 0% 1% 0%);
+  }
+}
+
+.Job {
+  text-align: center;
+  font-family: "Allan", cursive;
+  color: #fff;
+}
+
+
+@media (max-width: 679px) {
+  .Job {
+    font-size: 1.5em;
+  }
+
+
+}
+
+@media (min-width: 679px) {
+    .Job {
+    font-size: 2em;
+  }
+}

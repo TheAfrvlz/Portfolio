@@ -1,0 +1,19 @@
+@media (prefers-color-scheme: dark) {
+  body.light-theme {
+      --Color-bg-Prin: #F0F0F0;
+    --Text-Color-1: #b7b8baa4;
+    --Logo-Color: #1f358fcc;
+    --icon-Color-1: #3c508d;
+    --icon-H-Color-1: #3fd17a;  
+     --D-Color-Text-Green-White: #fff;
+  }
+  body {
+      --Color-bg-Prin: #0f172a;
+    --Text-Color-1: #ffffffc6;
+    --Logo-Color: #ffffff;
+    --icon-Color-1: #47ddc7;
+    --icon-H-Color-1: #48d07e;
+    --skill-t-hover: #dce2e60c;
+    --D-Color-Tex-Green-White: #fff;
+  }
+}

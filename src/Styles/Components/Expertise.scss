@@ -1,0 +1,126 @@
+.Knowledge {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1em;
+  h1 {
+    font-size: 4.2em;
+    font-family: var(--ff-Sarala);
+    color: #17c47f;
+  }
+  .Expertises {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .Expertise {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 16em;
+      gap: 1.7em;
+      .Name {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .bi {
+          font-size: 2.7em;
+          color: #fdfdfd;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .NameSkill {
+          font-size: 1.3em;
+          font-family: var(--ff-Sarala);
+          color: #fdfdfd;
+          text-align: center;
+          font-weight: 300;
+          width: fit-content;
+        }
+      }
+      .Skills {
+        span {
+          color: #48d07e;
+        }
+        position: relative;
+        height: fit-content;
+        font-family: var(--ff-Sarala);
+        font-size: 0.9em;
+        padding: 12px;
+        color: #fdfdfd94;
+        border-left: 3px solid #fdfdfd8b;
+        a:hover {
+          color: #48d07e;
+        }
+        &::after {
+          content: attr(Language);
+          font-size: 1.2em;
+          position: absolute;
+          bottom: 100%;
+          left: 2%;
+          transform-origin: right bottom;
+        }
+      }
+    }
+    .Divider {
+      height: 100%;
+      width: 4px;
+      border-radius: 2px;
+      background: rgb(255, 255, 255);
+      background: -moz-linear-gradient(
+        315deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.38258631089154416) 100%
+      );
+      background: -webkit-linear-gradient(
+        315deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.38258631089154416) 100%
+      );
+      background: linear-gradient(
+        315deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.38258631089154416) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    }
+  }
+}
+
+@media (max-width: 1069px) {
+  .Knowledge {
+    h1 {
+      font-size: 2.1em;
+    }
+  }
+  .Divider {
+    display: none;
+  }
+  .Expertises {
+    gap: 1.4em;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1069px) {
+  .Expertises {
+
+    height: 20em;
+    flex-direction: row;
+    gap: 3em;
+  }
+  .Divider {
+    display: block;
+  }
+  .Knowledge {
+      height: 100vh;
+
+    h1 {
+      font-size: 3.1em;
+    }
+  }
+}

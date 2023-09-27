@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "sass": "^1.66.1",
+    "vite": "^4.4.9"
+  },
+  "name": "portfolio-jesus",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "Multi": "vite --host",
+    "preview": "vite preview",
+    "sass": "sass src/Styles/Main.scss src/Styles/Main.css --style compressed --watch"
+  },
+  "type": "module",
+  "version": "0.0.0"
+}

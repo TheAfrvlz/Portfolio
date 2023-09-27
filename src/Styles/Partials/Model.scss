@@ -1,0 +1,12 @@
+@media (prefers-color-scheme: dark) {
+  body.light-theme {
+   --model-border: #222; 
+  }
+  body {
+    --model-border: #eee; 
+  }
+}
+
+.md{
+    border: 1px solid var(--model-border);
+}

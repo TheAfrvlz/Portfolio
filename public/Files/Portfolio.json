@@ -1,0 +1,73 @@
+[
+    {
+        "Type": "FS",
+        "Project": "Local Sticky Notes Board",
+        "Description": "",
+        "Image": "",
+        "Tools": [
+            "",
+            ""
+        ]
+    },
+    {
+        "Type": "FS",
+        "Project": "South Park API",
+        "Description": "API built with Express, SCSS & EJS, this API is unnoficial is only for my learning",
+        "Image": "../south-park.jpeg",
+        "Tools": [
+            "Express",
+            "NodeJS",
+            "css"
+        ]
+    },
+    {
+        "Type": "FS",
+        "Project": "Looney Tunes API",
+        "Description": "API built with Next JS & Tailwind CSS, this API is unnoficial is only for my learning",
+        "Image": "",
+        "Tools": [
+            "",
+            ""
+        ]
+    },
+    {
+        "Type": "FS",
+        "Project": "Python Tiktok Filter",
+        "Description": "",
+        "Image": "",
+        "Tools": [
+            "",
+            ""
+        ]
+    },
+    {
+        "Type": "FS",
+        "Project": "Agenda Peluqueria",
+        "Description": "",
+        "Image": "",
+        "Tools": [
+            "",
+            ""
+        ]
+    },
+    {
+        "Type": "FS",
+        "Project": "Restaurant Daily Menu",
+        "Description": "",
+        "Image": "",
+        "Tools": [
+            "",
+            ""
+        ]
+    },
+    {
+        "Type": "FS",
+        "Project": "Dynamic Bus Reservation",
+        "Description": "",
+        "Image": "",
+        "Tools": [
+            "",
+            ""
+        ]
+    }
+]
