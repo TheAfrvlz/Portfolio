@@ -1,0 +1,56 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    transform: translate(-50%, -50%);
+    border-radius: 35% 65% 53% 47% / 77% 34% 66% 23%;
+  }
+  25% {
+    transform: rotate(90deg);
+    transform: translate(-50%, -50%);
+    border-radius: 23% 77% 26% 74% / 82% 45% 55% 18%;
+  }
+  50% {
+    border-radius: 59% 41% 43% 57% / 30% 9% 91% 70%;
+    transform: rotate(180deg);
+    transform: translate(-50%, -50%);
+  }
+  75% {
+    border-radius: 30% 70% 43% 57% / 30% 82% 18% 70%;
+    transform: rotate(180deg);
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: translate(-50%, -50%);
+    border-radius: 35% 65% 53% 47% / 77% 34% 66% 23%;
+  }
+}
+
+.gradient {
+  position: fixed;
+  z-index: -1;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));
+  transform: translate(-50%, -50%);
+  animation: rotate 2.1s infinite ease-in-out;
+}
+
+.Portfolio{
+    z-index: 5;
+}
+@media (max-width: 720px) {
+  .gradient {
+    --size: 150px;
+  }
+}
+@media (min-width: 720px) {
+  .gradient {
+    --size: 300px;
+  }
+}
+

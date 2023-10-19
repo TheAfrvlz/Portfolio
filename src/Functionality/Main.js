@@ -160,3 +160,12 @@ data.forEach((item) => {
 
   container.appendChild(div);
 });
+
+var draggableElement = document.querySelector(".gradient");
+var offsetX = 0;
+var offsetY = 0;
+
+document.addEventListener("mousemove", function (e) {
+  draggableElement.style.left = e.clientX - offsetX + "px";
+  draggableElement.style.top = e.clientY - offsetY + "px";
+});
