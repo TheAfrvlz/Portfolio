@@ -6,130 +6,182 @@
   justify-content: center;
   align-items: center;
   gap: 1.1em;
+  .ProjectsTitle{
+        font-size: 3.1em;
 
+  }
   h1 {
-    font-size: 3.1em;
+    font-size: 2.5em;
     font-family: var(--ff-Sarala);
     color: #17c47f;
   }
 }
 
+// Variables
+$white: #fff;
+$black: #000;
+// clear-fix mixin
+@mixin cf {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
 .ProjectsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--v-Percent), 1fr));
-  grid-template-rows:auto;
-  padding:20px;
-  justify-content: center;
-  align-items: center;
-  grid-gap:10px;
+grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-row-gap:20px;
+  grid-column-gap:20px;
+  justify-items:center;
+  align-content:center;
   width: 70vw;
   height: auto;
 }
 
-@media (max-width: 380px) {
-  :root{
-    --v-Percent:100%;
+
+.card {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  float: left;
+  width: 380px;
+  .menu-content {
+    @include cf;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      display: inline-block;
+    }
+    a {
+      color: $white;
+    }
+    span {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      font-size: 10px;
+      font-weight: 700;
+      transform: translate(-50%, 0);
+    }
   }
-}
-
-@media (min-width: 917px) {
-  :root{
-    --v-Percent:40%;
-  }
-}
-
-@media (min-width: 1517px) {
-  :root{
-    --v-Percent:30%;
-  }
-}
-
-
-
-.Embedded,
-.Desktop,
-.Front{
-  border: 1px solid #fff;
-  .Birthdate {
-    font-size: 0.9em;
-    padding: 5px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    color: #2e2e2e;
-  }
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  & .Info {
-    transition: 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding-left: 23px;
-    margin-bottom: -5.4em;
-    background-color: #36343491;
-    height: 50%;
-    width: 100%;
-    color: #fdfdfd;
-    .Tools,
-    .Links {
-      width: 100%;
-      display: flex;
-      gap: 12px;
-      img {
-        height: 20px;
-        width: auto;
+  .wrapper {
+    background-color: $white;
+    height: 310px;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      .data {
+        transform: translateY(0px);
       }
     }
   }
-}
+  .data {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(calc(70px + 1em));
+    transition: transform 0.3s;
+    .content {
 
-.Embedded,
-.Desktop,
-.Front {
-  border-radius: 15px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  overflow: hidden;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(253, 253, 253, 0.17)
-    ),
-    var(--bg-image);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: auto;
-  &:hover {
-    transition: 0.5s ease-in-out;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(253, 253, 253, 0)),
-      var(--bg-image);
+      padding: 1em;
+      position: relative;
+      z-index: 1;
+      .codeLink{
+        justify-content:center;
+        gap: 13px;
+        display:flex;
+      }
+    }
   }
-  
+  .author {
+    font-size: 15px;
+  }
+  .title {
+    margin-top: 5px;
+    line-height: 40px;
+    margin-bottom: 13px;
+  }
+  .text {
+    height: 80px;
+    margin: 0;
+    color: #fffa;
+    &:hover{
+      color: #fff;
+    }
+  }
+  input[type='checkbox'] {
+    display: none;
+  }
+  input[type='checkbox']:checked + .menu-content {
+    transform: translateY(-60px);
+  }
 }
 
-:is(.Front, .Embedded, .Desktop):hover .Info {
-  margin-bottom: 0;
-}
+// Second example styles
+.example-2 {
+  .wrapper {
+    background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center / cover no-repeat;
+    &:hover {
+      .menu-content {
+        span {
+          transform: translate(-50%, 10px);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .header {
+    @include cf;
+    color: $white;
+    padding: 1em;
+    .date {
+      float: left;
+      font-size: 12px;
+    }
+  }
+  .menu-content {
+    float: right;
+    li {
+      margin: 0 5px;
+      position: relative;
+    }
+    span {
+      transition: all 0.3s;
+      opacity: 0;
+    }
+  }
+  .data {
+    color: $white;
+    transform: translateY(calc(70px + 4em));
+  }
+  .title {
+    a {
+      color: $white;
+    }
+  }
+  .button {
+    border-radius:1em;
+    display: block;
+    width: 100px;
+    padding: 12px 7px;
+    text-align: center;
+    font-size: 12px;
+    color: $white;
+    line-height: 1;
+    position: relative;
+    font-weight: 700;
+    transition: 0.3s ease-in-out all;
 
+    &:hover {
+      background-color: #fff1;
+      backdrop-filter:blur(4px);
+          color: #17c47f;
 
-@media (max-width: 679px) {
-.Embedded,
-.Desktop,
-.Front 
-{
-  height: 18em;
-  width: 80vw;
-}
-
-}
-
-@media (min-width: 679px) {
-  .Embedded,
-.Desktop,
-.Front 
-{
-  height: 18em;
-}
+    }
+  }
 }

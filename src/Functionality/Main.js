@@ -94,7 +94,7 @@ const data = [
 const container = document.querySelector(".ProjectsGrid");
 
 // Generar dinámicamente los elementos HTML
-data.forEach((item) => {
+/*data.forEach((item) => {
   const div = document.createElement("div");
   div.className = item.tools.length > 0 ? "Front" : "Embedded";
   div.style.setProperty("--bg-image", `url('${item.bgImage}')`);
@@ -160,6 +160,7 @@ data.forEach((item) => {
 
   container.appendChild(div);
 });
+*/
 
 var draggableElement = document.querySelector(".gradient");
 var offsetX = 0;
