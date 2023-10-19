@@ -1,5 +1,4 @@
 import { SideBarBtn, Sidebar } from "./Variables.js";
-import { MaxWin, MinWin } from "./Controllers/Query.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   Sidebar.style.width = "0px";
@@ -170,3 +169,33 @@ document.addEventListener("mousemove", function (e) {
   draggableElement.style.left = e.clientX - offsetX + "px";
   draggableElement.style.top = e.clientY - offsetY + "px";
 });
+
+
+
+const SwipperC = {
+  loop: true,
+  slidesPerView: 5,
+  slidesPerGroup: 1,
+  spaceBetween: 4,
+  speed: 2000,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: true,
+  },
+};
+const SwipperCInv = {
+  loop: true,
+  slidesPerView: 5,
+  slidesPerGroup: 1,
+  spaceBetween: 4,
+  speed: 2000,
+  autoplay: {
+    delay: 1000,
+    reverseDirection: true, // hace que el carrusel se desplace de izquierda a derecha
+    disableOnInteraction: true,
+  },
+};
+
+var swiper = new Swiper(".swiper-container", SwipperC);
+var swiper1 = new Swiper(".swiper-container1", SwipperCInv);
+

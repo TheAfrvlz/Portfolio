@@ -5,11 +5,16 @@
     <link rel="icon" href="/assets/Logo-d00a7415.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>JesusVelez.xyz</title>
-    <script type="module" crossorigin src="/assets/index-8a0e62ea.js"></script>
-    <link rel="stylesheet" href="/assets/index-5e604821.css">
+    <script type="module" crossorigin src="/assets/index-f1884740.js"></script>
+    <link rel="stylesheet" href="/assets/index-64e791f5.css">
   </head>
   <body>
+    <div class="gradient"></div>
     <div class="Portfolio">
       <div class="Menu">
         <div id="menuToggle" class="">
@@ -36,7 +41,7 @@
             </li>
           </ul>
           <div class="Main">
-            <a href="" class="Logo">JV</a>
+            <a href="#Presentation" class="Logo">JV</a>
           </div>
         </nav>
         <aside class="">
@@ -55,7 +60,7 @@
       </div>
 
       <div class="Resume">
-        <div class="Presentation">
+        <div id="Presentation" class="Presentation">
           <div class="logo">
             <div class="Nom">
               <h1 class="glitch" data-text="V">V</h1>
@@ -72,30 +77,28 @@
               <h1 class="glitch" data-text="s">s</h1>
             </div>
           </div>
-          <p class="Job">
-            CAD Designer, FullStack & Embedded <br />
-            Software Engineer
-          </p>
+          <p class="Job">FullStack & Embedded Software Engineer</p>
         </div>
         <div id="About" class="About">
           <img src="/assets/Me-f6b05a43.jpg" alt="" class="" />
           <div class="Info">
             <h1>About Me</h1>
             <p>
-              I'm a Mechatronics Engineer specialized in Embedded, Desktop and Web Application.
-              Fast-forward to today, work as a Embedded Software
-              Engineer at Continental, for automotive industry.
+              I'm a Mechatronics Engineer specialized in Embedded, Desktop and
+              Web Application. Fast-forward to today, work as a Embedded
+              Software Engineer at Continental, for automotive industry.
               <br />
               <br />
-              My main focus these days is to continue growing Professionally as a
-               Software Engineer and to be able to apply all my knowledge in new
-                technologies, new tools that allow technological developments.
+              My main focus these days is to continue growing Professionally as
+              a Software Engineer and to be able to apply all my knowledge in
+              new technologies, new tools that allow technological developments.
             </p>
           </div>
         </div>
         <div id="Xp" class="Knowledge">
           <h1>My Expertise</h1>
-          <div class="Expertises">
+          <!--
+            <div class="Expertises">
             <div class="Expertise">
               <div class="Name">
                 <i class="bi bi-cpu-fill"></i>
@@ -144,11 +147,422 @@
               </p>
             </div>
           </div>
+
+          -->
+          <div class="SliderContainer">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/assets/react-03ddbe0e.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/javascript-35328c60.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/nodejs-b7d12c95.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/mysql-6cf24b9d.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/mongodb-bda78459.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/rxjs-4a823775.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/vitejs-45c31588.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/vuejs-db8803a9.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/css-02005660.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/tailwind-4c3a0446.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/nextjs-40f02dfc.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/expo-e32e1c2e.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/express-5b6abc16.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/assets/arm-965442e6.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/stm-2f2476d8.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/c-968de4cd.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/cpp-704e5370.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/atmel-19e1c66e.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/microchip-5dfde86e.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/espressif-6d0068c2.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/nxp-c65cc914.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/infineon-c5021275.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/raspberry-pi-372e696e.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/linux-tux-266a6688.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/cSharp-718af05c.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/jira-d9eb9af9.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/flutter-00afcbe9.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="Projects" id="PR">
-          <h1>Projects</h1>
+          <h1 class="ProjectsTitle">Projects</h1>
           <div class="ProjectsGrid">
-          <!--  <div class="Front" style="--bg-image: url('/public/Image/south-park.jpeg')">
+            <div class="example-2 card">
+              <div class="wrapper">
+                <div class="header">
+                  <div class="date">
+                    <span class="day">12</span>
+                    <span class="month">Aug</span>
+                    <span class="year">2016</span>
+                  </div>
+                </div>
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Jesus Velez</span>
+                    <h1 class="title"><a href="#">LightWeight RTOS </a></h1>
+                    <p class="text">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
+                    <div class="codeLink">
+                      <a href="#" class="button">Github</a>
+                      <a href="#" class="button">Link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="example-2 card">
+              <div class="wrapper">
+                <div class="header">
+                  <div class="date">
+                    <span class="day">12</span>
+                    <span class="month">Aug</span>
+                    <span class="year">2016</span>
+                  </div>
+                </div>
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Jesus Velez</span>
+                    <h1 class="title">
+                      <a href="#">Serial Bootloader for ARM </a>
+                    </h1>
+                    <p class="text">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
+                    <div class="codeLink">
+                      <a href="#" class="button">Github</a>
+                      <a href="#" class="button">Link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="example-2 card">
+              <div class="wrapper">
+                <div class="header">
+                  <div class="date">
+                    <span class="day">12</span>
+                    <span class="month">Aug</span>
+                    <span class="year">2016</span>
+                  </div>
+                </div>
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Jesus Velez</span>
+                    <h1 class="title">
+                      <a href="#">SD Card Firmware Update</a>
+                    </h1>
+                    <p class="text">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
+                    <div class="codeLink">
+                      <a href="#" class="button">Github</a>
+                      <a href="#" class="button">Link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="example-2 card">
+              <div class="wrapper">
+                <div class="header">
+                  <div class="date">
+                    <span class="day">12</span>
+                    <span class="month">Aug</span>
+                    <span class="year">2016</span>
+                  </div>
+                </div>
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Jesus Velez</span>
+                    <h1 class="title"><a href="#">Esp WebSocket </a></h1>
+                    <p class="text">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
+                    <div class="codeLink">
+                      <a href="#" class="button">Github</a>
+                      <a href="#" class="button">Link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-2 card">
+              <div class="wrapper">
+                <div class="header">
+                  <div class="date">
+                    <span class="day">12</span>
+                    <span class="month">Aug</span>
+                    <span class="year">2016</span>
+                  </div>
+                </div>
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Jesus Velez</span>
+                    <h1 class="title"><a href="#">ESP OTA </a></h1>
+                    <p class="text">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
+                    <div class="codeLink">
+                      <a href="#" class="button">Github</a>
+                      <a href="#" class="button">Link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-2 card">
+              <div class="wrapper">
+                <div class="header">
+                  <div class="date">
+                    <span class="day">12</span>
+                    <span class="month">Aug</span>
+                    <span class="year">2016</span>
+                  </div>
+                </div>
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Jesus Velez</span>
+                    <h1 class="title"><a href="#">C Language Blog</a></h1>
+                    <p class="text">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
+                    <div class="codeLink">
+                      <a href="#" class="button">Github</a>
+                      <a href="#" class="button">Link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-2 card">
+              <div class="wrapper">
+                <div class="header">
+                  <div class="date">
+                    <span class="day">12</span>
+                    <span class="month">Aug</span>
+                    <span class="year">2016</span>
+                  </div>
+                </div>
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Jesus Velez</span>
+                    <h1 class="title"><a href="#">XString Library </a></h1>
+                    <p class="text">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
+                    <div class="codeLink">
+                      <a href="#" class="button">Github</a>
+                      <a href="#" class="button">Link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-2 card">
+              <div class="wrapper">
+                <div class="header">
+                  <div class="date">
+                    <span class="day">12</span>
+                    <span class="month">Aug</span>
+                    <span class="year">2016</span>
+                  </div>
+                </div>
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Jesus Velez</span>
+                    <h1 class="title">
+                      <a href="#">USB Controller Microchip </a>
+                    </h1>
+                    <p class="text">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
+                    <div class="codeLink">
+                      <a href="#" class="button">Github</a>
+                      <a href="#" class="button">Link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-2 card">
+              <div class="wrapper">
+                <div class="header">
+                  <div class="date">
+                    <span class="day">12</span>
+                    <span class="month">Aug</span>
+                    <span class="year">2016</span>
+                  </div>
+                </div>
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Jesus Velez</span>
+                    <h1 class="title">
+                      <a href="#">Ethernet Controller STM </a>
+                    </h1>
+                    <p class="text">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
+                    <div class="codeLink">
+                      <a href="#" class="button">Github</a>
+                      <a href="#" class="button">Link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-2 card">
+              <div class="wrapper">
+                <div class="header">
+                  <div class="date">
+                    <span class="day">12</span>
+                    <span class="month">Aug</span>
+                    <span class="year">2016</span>
+                  </div>
+                </div>
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Jesus Velez</span>
+                    <h1 class="title"><a href="#">ESP GcodeServer </a></h1>
+                    <p class="text">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
+                    <div class="codeLink">
+                      <a href="#" class="button">Github</a>
+                      <a href="#" class="button">Link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-2 card">
+              <div class="wrapper">
+                <div class="header">
+                  <div class="date">
+                    <span class="day">12</span>
+                    <span class="month">Aug</span>
+                    <span class="year">2016</span>
+                  </div>
+                </div>
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Jesus Velez</span>
+                    <h1 class="title"><a href="#">SouthPark REST-API </a></h1>
+                    <p class="text">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
+                    <div class="codeLink">
+                      <a href="#" class="button">Github</a>
+                      <a href="#" class="button">Link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-2 card">
+              <div class="wrapper">
+                <div class="header">
+                  <div class="date">
+                    <span class="day">12</span>
+                    <span class="month">Aug</span>
+                    <span class="year">2016</span>
+                  </div>
+                </div>
+                <div class="data">
+                  <div class="content">
+                    <span class="author">Jesus Velez</span>
+                    <h1 class="title">
+                      <a href="#">Restaurant Daily Food App</a>
+                    </h1>
+                    <p class="text">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
+                    <div class="codeLink">
+                      <a href="#" class="button">Github</a>
+                      <a href="#" class="button">Link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  <div class="Front" style="--bg-image: url('/public/Image/south-park.jpeg')">
               <h2 class="Birthdate">12 Aug 18</h2>
               <div class="Info">
                 <h2>Afran Vlez</h2>
@@ -228,10 +642,12 @@
           </div>
         </div>
         <div class="Designed">
-          Designed by <a href="jesusvelez.xyz">Afran Velez</a>
+          Designed by <a href="jesusvelez.xyz">Jesus Velez</a>
         </div>
       </footer>
     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
   </body>
 </html>
