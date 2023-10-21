@@ -160,6 +160,231 @@ const container = document.querySelector(".ProjectsGrid");
   container.appendChild(div);
 });
 */
+const cardData = [
+  {
+    projectImg: "https://images3.alphacoders.com/124/1249834.jpg",
+    day: "12",
+    month: "Aug",
+    year: "2016",
+    author: "Jesus Velez",
+    title: "LightWeight RTOS",
+    text: "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
+    githubLink: "#",
+    projectLink: "#",
+  },
+  {
+    projectImg:
+      "https://content.instructables.com/ORIG/FI2/4JH2/IY1L2N3A/FI24JH2IY1L2N3A.jpg?auto=webp",
+    day: "12",
+    month: "Aug",
+    year: "2016",
+    author: "Jesus Velez",
+    title: "Serial Bootloader for ARM",
+    text: "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
+    githubLink: "#",
+    projectLink: "#",
+  },
+  {
+    projectImg: "https://www.sdcard.org/assets/images/landing/consumer2.jpg",
+    day: "12",
+    month: "Aug",
+    year: "2016",
+    author: "Jesus Velez",
+    title: "SD Card Firmware Update",
+    text: "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
+    githubLink: "#",
+    projectLink: "#",
+  },
+  {
+    projectImg:
+      "https://www.espressif.com/sites/default/files/product/esp-wroom-32_product_picture_web.jpg",
+    day: "12",
+    month: "Aug",
+    year: "2016",
+    author: "Jesus Velez",
+    title: "Esp WebSocket",
+    text: "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
+    githubLink: "#",
+    projectLink: "#",
+  },
+  {
+    projectImg:
+      "https://www.espressif.com/sites/default/files/product/esp-wroom-32_product_picture_web.jpg",
+    day: "12",
+    month: "Aug",
+    year: "2016",
+    author: "Jesus Velez",
+    title: "ESP OTA",
+    text: "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
+    githubLink: "#",
+    projectLink: "#",
+  },
+  {
+    projectImg:
+      "https://cdn-images-1.medium.com/max/2600/1*9swYL8d021HoM0uwqGhlMg.jpeg",
+    day: "12",
+    month: "Aug",
+    year: "2016",
+    author: "Jesus Velez",
+    title: "C Language Blog",
+    text: "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
+    githubLink: "#",
+    projectLink: "#",
+  },
+  {
+    projectImg:
+      "https://image.shutterstock.com/image-photo/image-250nw-725888862.jpg",
+    day: "12",
+    month: "Aug",
+    year: "2016",
+    author: "Jesus Velez",
+    title: "XString Library",
+    text: "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
+    githubLink: "#",
+    projectLink: "#",
+  },
+  {
+    projectImg:
+      "https://www.microchip.com/_images/products/original/USB251xB_xBi.png",
+    day: "12",
+    month: "Aug",
+    year: "2016",
+    author: "Jesus Velez",
+    title: "USB Controller Microchip",
+    text: "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
+    githubLink: "#",
+    projectLink: "#",
+  },
+  {
+    projectImg:
+      "https://m.media-amazon.com/images/I/71kcw+eKwxL._AC_SY679_.jpg",
+    day: "12",
+    month: "Aug",
+    year: "2016",
+    author: "Jesus Velez",
+    title: "Ethernet Controller STM",
+    text: "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
+    githubLink: "#",
+    projectLink: "#",
+  },
+  {
+    projectImg:
+      "https://www.espressif.com/sites/default/files/product/esp-wroom-32_product_picture_web.jpg",
+    day: "12",
+    month: "Aug",
+    year: "2016",
+    author: "Jesus Velez",
+    title: "ESP GcodeServer",
+    text: "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
+    githubLink: "#",
+    projectLink: "#",
+  },
+  {
+    projectImg:
+      "https://static.toiimg.com/photo/msid-67586673/67586673.jpg?resizemode=4&width=400",
+    day: "12",
+    month: "Aug",
+    year: "2016",
+    author: "Jesus Velez",
+    title: "SouthPark REST-API",
+    text: "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
+    githubLink: "#",
+    projectLink: "#",
+  },
+  {
+    projectImg:
+      "https://media.istockphoto.com/photos/modern-restaurant-menu-picture-id1152798173?k=20&m=1152798173&s=170667a&w=0&h=U5T_PkbXa4aR2kYHcxEviKk85jkIY0UlhHtCqDJYI4I=",
+    day: "12",
+    month: "Aug",
+    year: "2016",
+    author: "Jesus Velez",
+    title: "Restaurant Daily Food App",
+    text: "The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.",
+    githubLink: "#",
+    projectLink: "#",
+  },
+];
+
+function createCards(data) {
+  const container = document.querySelector(".ProjectsGrid"); // Selecciona el elemento con la clase 'ProjectsGrid'
+
+  data.forEach((item) => {
+    const card = document.createElement("div");
+    card.className = "example-2 card";
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "wrapper";
+wrapper.style.background = `url(${item.projectImg}) no-repeat center / cover`;
+
+
+    const header = document.createElement("div");
+    header.className = "header";
+
+    const date = document.createElement("div");
+    date.className = "date";
+
+    const day = document.createElement("span");
+    day.className = "day";
+    day.innerText = item.day;
+
+    const month = document.createElement("span");
+    month.className = "month";
+    month.innerText = item.month;
+
+    const year = document.createElement("span");
+    year.className = "year";
+    year.innerText = item.year;
+
+    date.append(day, month, year);
+    header.appendChild(date);
+
+    const dataDiv = document.createElement("div");
+    dataDiv.className = "data";
+
+    const content = document.createElement("div");
+    content.className = "content";
+
+    const author = document.createElement("span");
+    author.className = "author";
+    author.innerText = item.author;
+
+    const title = document.createElement("h1");
+    title.className = "title";
+
+    const titleLink = document.createElement("a");
+    titleLink.href = "#";
+    titleLink.innerText = item.title;
+
+    title.appendChild(titleLink);
+
+    const text = document.createElement("p");
+    text.className = "text";
+    text.innerText = item.text;
+
+    const codeLink = document.createElement("div");
+    codeLink.className = "codeLink";
+
+    const githubLink = document.createElement("a");
+    githubLink.className = "button";
+    githubLink.href = item.githubLink;
+    githubLink.innerText = "Github";
+
+    const projectLink = document.createElement("a");
+    projectLink.className = "button";
+    projectLink.href = item.projectLink;
+    projectLink.innerText = "Link";
+
+    codeLink.append(githubLink, projectLink);
+    content.append(author, title, text, codeLink);
+    dataDiv.appendChild(content);
+    wrapper.append(header, dataDiv);
+    card.appendChild(wrapper);
+    container.appendChild(card);
+  });
+}
+
+// Llama a la función con tus datos
+createCards(cardData);
 
 var draggableElement = document.querySelector(".gradient");
 var offsetX = 0;
@@ -171,31 +396,28 @@ document.addEventListener("mousemove", function (e) {
 });
 
 
+const scrollers = document.querySelectorAll(".scroller");
 
-const SwipperC = {
-  loop: true,
-  slidesPerView: 5,
-  slidesPerGroup: 1,
-  spaceBetween: 4,
-  speed: 2000,
-  autoplay: {
-    delay: 1000,
-    disableOnInteraction: true,
-  },
-};
-const SwipperCInv = {
-  loop: true,
-  slidesPerView: 5,
-  slidesPerGroup: 1,
-  spaceBetween: 4,
-  speed: 2000,
-  autoplay: {
-    delay: 1000,
-    reverseDirection: true, // hace que el carrusel se desplace de izquierda a derecha
-    disableOnInteraction: true,
-  },
-};
+// If a user hasn't opted in for recuded motion, then we add the animation
 
-var swiper = new Swiper(".swiper-container", SwipperC);
-var swiper1 = new Swiper(".swiper-container1", SwipperCInv);
+addAnimation();
 
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    // add data-animated="true" to every `.scroller` on the page
+    scroller.setAttribute("data-animated", true);
+
+    // Make an array from the elements within `.scroller-inner`
+    const scrollerInner = scroller.querySelector(".scroller__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    // For each item in the array, clone it
+    // add aria-hidden to it
+    // add it into the `.scroller-inner`
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
