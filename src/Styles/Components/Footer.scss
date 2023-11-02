@@ -1,12 +1,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
-.logos a, .logos .bi{
+.logos a, .logos .bi, .logos svg{
   cursor: pointer;
   font-size: 20px;
   color: var(--Text-Color-1);
   transition: 0.2s ease-out;
 }
 .logos .bi:hover,
-.logos a:hover {
+.logos a:hover,
+.logos svg:hover {
   transition: 0.2s ease-in;
   color: var(--icon-H-Color-1);
 }
@@ -75,12 +76,13 @@
     margin-bottom: 10px;
     justify-content: space-evenly;
   }
-  .contacto .logos a,.contacto .logos .bi{
-    width: 30px;
-    height: 30px;
+  .contacto .logos a,.contacto .logos .bi, .contacto .logos svg{
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
     transition: 0.2s ease-in;
   }
-  .contacto .logos a:hover, .contacto .logos .bi:hover {
+  .contacto .logos a:hover, .contacto .logos .bi:hover , .contacto .logos svg{
     margin-bottom: 25px;
   }
   .contacto .logos a .bi:hover, .contacto .logos .bi:hover  {
@@ -89,6 +91,7 @@
 
   .contacto .logos a :hover , .contacto .logos .bi :hover {
     width: 35px;
-    height: 45px;
+    height:35px;
+    font-size: 35px;
   }
 }
