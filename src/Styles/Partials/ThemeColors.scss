@@ -4,7 +4,11 @@
     --Text-Color-1: #ffffffc6;
     --Logo-Color: #ffffff;
     --icon-Color-1: #47ddc7;
-    --icon-H-Color-1: #48d07e;
+    --icon-H-Color-1: #449f69;
     --skill-t-hover: #dce2e60c;
     --D-Color-Tex-Green-White: #fff;
+  }
+
+  .setColor{
+    color:var(--icon-H-Color-1);
   }
